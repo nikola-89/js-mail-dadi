@@ -1,24 +1,16 @@
 // Gioco dei dadi, chi fa di più vince
 
-var numUser0 = parseInt(prompt('USER_0 = Inserisci un numero da 1 a 6:'));
-var numUser1 = parseInt(prompt('USER_1 = Inserisci un numero da 1 a 6:'));
+var numUser0 = Math.floor(Math.random() * (6 - 1 + 1)) + 1;
+console.log('User0: ' + numUser0);
+var numUser1 = Math.floor(Math.random() * (6 - 1 + 1)) + 1;
+console.log('User1: ' + numUser1);
 
-if(isNaN(numUser0) || isNaN(numUser1)) {
-    alert('Non hai inserito un numero.');
+if(numUser0 > numUser1) {
+    console.log('User0 WIN')
+}
+else if(numUser0 == numUser1) {
+    console.log('Pari.');
 }
 else {
-    if(numUser0 <= 6 && numUser1 <= 6 && numUser0 != 0 && numUser1 != 0) {
-        if(numUser0 > numUser1) {
-            alert('USER_0 Vince.');
-        }
-        else if(numUser0 == numUser1) {
-            alert('Pari.');
-        }
-        else {
-            alert('USER_1 Vince.');
-        }
-    }
-    else {
-        alert('Numero non consentito.');
-    }
+    console.log('User1 WIN')
 }
