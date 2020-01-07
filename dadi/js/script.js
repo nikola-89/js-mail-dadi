@@ -1,0 +1,19 @@
+// Gioco dei dadi, chi fa di più vince
+
+var numUser0 = parseInt(prompt('USER_0 = Inserisci un numero da 1 a 6:'));
+var numUser1 = parseInt(prompt('USER_1 = Inserisci un numero da 1 a 6:'));
+
+if(numUser0 && numUser1 <= 6 ||	numUser0 && numUser1 !=	0) {
+    if(numUser0 > numUser1) {
+        alert('USER_0 Vince.');
+    }
+    else if(numUser0 == numUser1) {
+        alert('Pari.');
+    }
+    else {
+        alert('USER_1 Vince.');
+    }
+}
+else {
+    alert('Numero non consentito.');
+}
