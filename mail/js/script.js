@@ -2,18 +2,15 @@ var listaEmail = ['nietzsche@gmail.com', 'kant@gmail.com', 'schopenhauer@gmail.c
 
 var userEmail = prompt('Inserisci la tua email:');
 
-var auth = None;
+var auth = false;
 
 for (var i = 0; i < listaEmail.length; i++) {
     if(listaEmail[i] == userEmail) {
-        auth = True;
-    }
-    else {
-        auth = False;
+        auth = true;
     }
 }
 
-if(auth == True) {
+if(auth == true) {
     alert('200 | OK');
 }
 else {
