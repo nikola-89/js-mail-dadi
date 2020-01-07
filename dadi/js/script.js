@@ -6,11 +6,11 @@ var numUser1 = Math.floor(Math.random() * (6 - 1 + 1)) + 1;
 console.log('User1: ' + numUser1);
 
 if(numUser0 > numUser1) {
-    console.log('User0 WIN')
+    console.log('User0 WIN');
 }
 else if(numUser0 == numUser1) {
     console.log('Pari.');
 }
 else {
-    console.log('User1 WIN')
+    console.log('User1 WIN');
 }
