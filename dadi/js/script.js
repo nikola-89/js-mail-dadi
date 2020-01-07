@@ -3,7 +3,7 @@
 var numUser0 = parseInt(prompt('USER_0 = Inserisci un numero da 1 a 6:'));
 var numUser1 = parseInt(prompt('USER_1 = Inserisci un numero da 1 a 6:'));
 
-if(isNaN(numUser0) && isNaN(numUser1)) {
+if(isNaN(numUser0) || isNaN(numUser1)) {
     alert('Non hai inserito un numero.');
 }
 else {
